@@ -6,11 +6,14 @@ class Resonator:
         self.attribute = attribute
 
     def introduction(self):
-        print("Hello my fav resonator is {self.name}, the weapon he/she use is {self.weapon}, his/her attribute is {self.attribute}, what about yours?" )
+        print(f"Hello my fav resonator is {self.name}, the weapon he/she use is {self.weapon}, his/her attribute is {self.attribute}, what about yours?" )
 
     def changeAttribute(self,new_attribute):
+        old = self.attribute
         self.attribute = new_attribute
-        print ("Attribute lama : {new_attribute}")
+        print (f"old attribute: {old}")
+        print (f"new attribute: {new_attribute}")
+
 
 char1 = Resonator("rover","sword","havoc")
 char2 = Resonator("carlotta","pistol","ice")
@@ -19,6 +22,8 @@ Resonator.Role = "Main Damage Dealer"
 
 char1.changeAttribute("spectro")
 
+print()
+char1.introduction()
 print()
 print(char1.name)
 print(char1.weapon)
