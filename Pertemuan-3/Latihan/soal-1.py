@@ -14,7 +14,7 @@ class Resonator:
         print (f"old attribute: {old}")
         print (f"new attribute: {new_attribute}")
 
-
+        
 char1 = Resonator("rover","sword","havoc")
 char2 = Resonator("carlotta","pistol","ice")
 char3 = Resonator("Zani","gautlet","spectro")
